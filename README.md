@@ -2,6 +2,8 @@
 
 A live, installable (PWA) countdown to every SPM paper.
 
+Made by **heyziq05** · [github.com/heyziq05](https://github.com/heyziq05)
+
 ## Run it
 
 It's a static site, with no build step. Any static server works:

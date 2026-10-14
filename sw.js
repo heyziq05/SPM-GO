@@ -1,4 +1,5 @@
-/* SPM GO! service worker — bump VERSION when you change files */
+/* SPM GO! service worker — bump VERSION when you change files
+   Author: heyziq05 (https://github.com/heyziq05) */
 const VERSION = 'spmgo-v2';
 const SHELL = [
   './', 'index.html', 'css/styles.css', 'js/data.js', 'js/app.js',
