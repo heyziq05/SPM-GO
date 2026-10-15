@@ -35,6 +35,23 @@ Add `?now=` to the URL to simulate any moment (Malaysia time):
 - `?now=2026-11-23T10:00`: a paper in progress, with the next one queued
 - `?now=2026-12-18`: everything finished, showing the congratulations screen
 
+## Tech stack
+
+| Layer | Tech | Used for |
+|---|---|---|
+| Markup | HTML5 | Page structure, accessible tabs, meta tags |
+| Styling | CSS3 (vanilla) | Layout (Grid/Flexbox), responsive mobile-first design, 3D flip-calendar (`perspective`, `rotateX`), animations, custom properties for theming |
+| Logic | JavaScript (vanilla, ES2020+) | Live countdowns, flip-calendar animation, auto-switching to the next exam, module tabs, `.ics` calendar export |
+| Data | `js/data.js` (plain JS config) | Exam schedule, year, times, modules — the only file to edit |
+| Dates & time | `Intl.DateTimeFormat` API | Formatting dates/times in Malaysia time (Asia/Kuala_Lumpur) |
+| PWA | Web App Manifest + Service Worker | Installable to home screen, works offline |
+| Storage | `localStorage` | Remembers the last selected module |
+| Fonts | Bricolage Grotesque, IBM Plex Sans, IBM Plex Mono (self-hosted `.woff2`) | Headings, body text, numbers — work offline |
+| Graphics | Inline SVG | Icons, background study pattern, app icon source |
+| Hosting | Any static host (e.g. GitHub Pages) | Serves the site over HTTPS (required for install) |
+
+No frameworks, no dependencies, no build step.
+
 ## Structure
 
 ```
